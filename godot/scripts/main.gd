@@ -14,8 +14,8 @@ extends Control
 @export var mummy: TextureRect
 @export var mummy_player: AnimationPlayer
 
-var sidea_tracks: Array[AudioStreamWAV]
-var sideb_tracks: Array[AudioStreamWAV]
+var sidea_tracks: Array[AudioStream]
+var sideb_tracks: Array[AudioStream]
 
 func config_selected() -> void:
     var selected: String = ConfigManager.get_selection("CHOICE_SELECT")
@@ -50,26 +50,28 @@ func _ready() -> void:
     config_selected()
     setup_audio_bus()
 
-func get_stream_array(directory: String) -> Array[AudioStreamWAV]:
-    var retval: Array[AudioStreamWAV] = []
+func get_stream_array(directory: String) -> Array[AudioStream]:
+    var retval: Array[AudioStream] = []
+    print("Read tracks from ", directory)
     var dir: DirAccess = DirAccess.open(directory)
-    if dir:
-        dir.list_dir_begin()
-        var file_name: String = dir.get_next()
-        while file_name != "":
+    assert(dir != null)
+    dir.list_dir_begin()
+    var file_name: String = dir.get_next()
+    print("file_name : ", file_name)
+    while file_name != "":
+        if file_name.ends_with("mp3") :
             var full_path: String = directory + file_name
-            var audio_stream: AudioStreamWAV = load(full_path)
+            print("Importing Audio ", full_path)
+            var audio_stream: AudioStream = load(full_path)
             if audio_stream:
                 retval.append(audio_stream)
-            file_name = dir.get_next()
-        dir.list_dir_end()
-    else:
-        push_error("Unabled to open Music Directory: ", directory)
+        file_name = dir.get_next()
+    dir.list_dir_end()
     return retval
 
 func setup_tracks() -> void:
-    var voxA_dir = "res://assets/audio/SideA/"
-    var voxB_dir = "res://assets/audio/SideB/"
+    var voxA_dir = "res://assets/audio/MP3/SideA/"
+    var voxB_dir = "res://assets/audio/MP3/SideB/"
     sidea_tracks = get_stream_array(voxA_dir)
     sideb_tracks = get_stream_array(voxB_dir)
     print("SIDE A ", sidea_tracks.size())

@@ -3,6 +3,9 @@
 [sub_resource type="SystemFont" id="SystemFont_wfw8i"]
 
 [resource]
+Button/constants/outline_size = 5
+Button/font_sizes/font_size = 30
+Button/fonts/font = null
 Label/colors/font_shadow_color = Color(0.58818597, 0.3364577, 0.2715884, 0)
 Label/font_sizes/font_size = 40
 Label/fonts/font = SubResource("SystemFont_wfw8i")

@@ -34,4 +34,4 @@ func _on_voice_volume_value_changed(value: float) -> void:
 
 
 func _on_return_button_button_down() -> void:
-    print("Return to Main")
+    get_tree().change_scene_to_file("res://scenes/main.tscn")

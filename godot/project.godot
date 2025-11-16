@@ -13,6 +13,7 @@ config_version=5
 config/name="Mummy Vox"
 config/description="Mummy Vox random mp3 player"
 config/version="0.1"
+run/main_scene="uid://qqaopl4pymnk"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 run/low_processor_mode=true
 boot_splash/show_image=false

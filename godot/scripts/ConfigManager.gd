@@ -25,6 +25,8 @@ func set_selection(selection: String, value: String) -> void:
     config.save(CONFIGFILE)
     
 func get_volume(bus: String) -> float:
+    assert(bus != null)
+    assert(bus.length() > 0)
     return config.get_value("audio", bus) as float
     
 func get_selection(selection: String) -> String:

@@ -69,11 +69,29 @@ func get_stream_array(directory: String) -> Array[AudioStream]:
     dir.list_dir_end()
     return retval
 
+func alt_get_stream_array(directory: String) -> Array[AudioStream]:
+    var retval: Array[AudioStream] = []
+    # Assume cirectory ends with a trailing slash
+    
+    var files: PackedStringArray = ResourceLoader.list_directory(directory)
+    for file: String in files:
+        if file.get_extension().to_lower() == "mp3" and not file.ends_with("/"):
+            var full_path = directory + file
+            var audio_stream: AudioStream = load(full_path)
+            if audio_stream:
+                retval.append(audio_stream)
+                print("Loaded ", full_path)
+            else:
+                print("Failed to load ", full_path)
+    
+    
+    return retval
+
 func setup_tracks() -> void:
     var voxA_dir = "res://assets/audio/MP3/SideA/"
     var voxB_dir = "res://assets/audio/MP3/SideB/"
-    sidea_tracks = get_stream_array(voxA_dir)
-    sideb_tracks = get_stream_array(voxB_dir)
+    sidea_tracks = alt_get_stream_array(voxA_dir)
+    sideb_tracks = alt_get_stream_array(voxB_dir)
     print("SIDE A ", sidea_tracks.size())
     print("SIDE B ", sideb_tracks.size())    
     

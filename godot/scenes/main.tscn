@@ -159,9 +159,10 @@ libraries = {
 
 [node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_tefeu")
+bus = &"SFX"
 
 [node name="VOXPlayer" type="AudioStreamPlayer" parent="."]
-bus = &"SFX"
+bus = &"Voice"
 
 [connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/SideA" to="." method="_on_side_toggled" binds= ["SIDEA"]]
 [connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/SideB" to="." method="_on_side_toggled" binds= ["SIDEB"]]

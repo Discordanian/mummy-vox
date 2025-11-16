@@ -20,6 +20,10 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://icon.svg"
 
+[autoload]
+
+ConfigManager="*res://scripts/ConfigManager.gd"
+
 [display]
 
 window/size/viewport_width=720

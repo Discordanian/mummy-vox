@@ -42,7 +42,7 @@ func setup_audio_bus() -> void:
     value = float(ConfigManager.get_volume("MAIN_VOLUME"))
     AudioServer.set_bus_volume_db(MAIN_BUS_ID, linear_to_db(value))
     AudioServer.set_bus_mute(MAIN_BUS_ID, value < 0.05) 
-       
+   
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -61,7 +61,7 @@ func get_stream_array(directory: String) -> Array[AudioStream]:
     while file_name != "":
         if file_name.ends_with("mp3") :
             var full_path: String = directory + file_name
-            print("Importing Audio ", full_path)
+            # print("Importing Audio ", full_path)
             var audio_stream: AudioStream = load(full_path)
             if audio_stream:
                 retval.append(audio_stream)
@@ -80,7 +80,7 @@ func alt_get_stream_array(directory: String) -> Array[AudioStream]:
             var audio_stream: AudioStream = load(full_path)
             if audio_stream:
                 retval.append(audio_stream)
-                print("Loaded ", full_path)
+                # print("Loaded ", full_path)
             else:
                 print("Failed to load ", full_path)
     
@@ -92,8 +92,8 @@ func setup_tracks() -> void:
     var voxB_dir = "res://assets/audio/MP3/SideB/"
     sidea_tracks = alt_get_stream_array(voxA_dir)
     sideb_tracks = alt_get_stream_array(voxB_dir)
-    print("SIDE A ", sidea_tracks.size())
-    print("SIDE B ", sideb_tracks.size())    
+    print("Number of Tracks SIDE A ", sidea_tracks.size())
+    print("Number of Tracks SIDE B ", sideb_tracks.size())    
     
 
 func _on_side_toggled(toggled_on: bool, selection: String) -> void:

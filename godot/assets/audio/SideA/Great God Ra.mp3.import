@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://qdqdl6jofkam"
+path="res://.godot/imported/Great God Ra.mp3-50440d7286462c2e0f48403580fd9b83.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SideA/Great God Ra.mp3"
+dest_files=["res://.godot/imported/Great God Ra.mp3-50440d7286462c2e0f48403580fd9b83.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

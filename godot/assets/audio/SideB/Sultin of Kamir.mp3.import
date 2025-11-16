@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dk2auswyyf08c"
+path="res://.godot/imported/Sultin of Kamir.mp3-6ccf50945d12de4475fc103d8709422e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SideB/Sultin of Kamir.mp3"
+dest_files=["res://.godot/imported/Sultin of Kamir.mp3-6ccf50945d12de4475fc103d8709422e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://vhg7lwcfhq81"
+path="res://.godot/imported/Screeching Green Pestilence.mp3-7184d2b18bd8b98ca8b74bcd048fc865.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SideA/Screeching Green Pestilence.mp3"
+dest_files=["res://.godot/imported/Screeching Green Pestilence.mp3-7184d2b18bd8b98ca8b74bcd048fc865.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

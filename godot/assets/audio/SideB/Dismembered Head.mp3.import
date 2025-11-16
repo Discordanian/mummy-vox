@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2w3463bxno6r"
+path="res://.godot/imported/Dismembered Head.mp3-ab9515412f7b8bcbc32c88c1f0a6c34e.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/SideB/Dismembered Head.mp3"
+dest_files=["res://.godot/imported/Dismembered Head.mp3-ab9515412f7b8bcbc32c88c1f0a6c34e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

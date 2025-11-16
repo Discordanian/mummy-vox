@@ -17,20 +17,17 @@ func _ready() -> void:
 
 
 func _on_sfx_volume_value_changed(value: float) -> void:
-    print("New value of SFX Volume ", value) 
     AudioServer.set_bus_volume_db(SFX_BUS_ID, linear_to_db(value))
     AudioServer.set_bus_mute(SFX_BUS_ID, value < 0.05)
     ConfigManager.set_volume("SFX_VOLUME", value)
 
 
 func _on_main_volume_value_changed(value: float) -> void:
-    print("New value of MAIN Volume ", value) 
     AudioServer.set_bus_volume_db(MAIN_BUS_ID, linear_to_db(value))
     AudioServer.set_bus_mute(MAIN_BUS_ID, value < 0.05)
     ConfigManager.set_volume("MAIN_VOLUME", value)
 
 func _on_voice_volume_value_changed(value: float) -> void:
-    print("New value of VOX Volume ", value) 
     AudioServer.set_bus_volume_db(VOICE_BUS_ID, linear_to_db(value))
     AudioServer.set_bus_mute(VOICE_BUS_ID, value < 0.05)
     ConfigManager.set_volume("VOICE_VOLUME", value)

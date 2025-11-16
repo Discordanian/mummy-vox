@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eom1755s6i5a"
+path="res://.godot/imported/Surrounded by Evil.mp3-effa195ba6c10fb255307bd86f74d413.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Surrounded by Evil.mp3"
+dest_files=["res://.godot/imported/Surrounded by Evil.mp3-effa195ba6c10fb255307bd86f74d413.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

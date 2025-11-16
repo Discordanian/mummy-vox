@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://u3pypixqfjfp"
+path="res://.godot/imported/Bottomless Pit.mp3-5dbe02f350b6bd77a0c6f592ca9d21a8.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideA/Bottomless Pit.mp3"
+dest_files=["res://.godot/imported/Bottomless Pit.mp3-5dbe02f350b6bd77a0c6f592ca9d21a8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

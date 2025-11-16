@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b16nmxw1u4kja"
+path="res://.godot/imported/Fierce Felines Pharoah.mp3-6c155eb540c6d3bce8110427bca3c262.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideA/Fierce Felines Pharoah.mp3"
+dest_files=["res://.godot/imported/Fierce Felines Pharoah.mp3-6c155eb540c6d3bce8110427bca3c262.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

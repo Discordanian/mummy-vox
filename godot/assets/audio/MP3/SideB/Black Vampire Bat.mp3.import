@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6k0x0rto6r6v"
+path="res://.godot/imported/Black Vampire Bat.mp3-bfe239ec20e998e5cba1fac8bd267211.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Black Vampire Bat.mp3"
+dest_files=["res://.godot/imported/Black Vampire Bat.mp3-bfe239ec20e998e5cba1fac8bd267211.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

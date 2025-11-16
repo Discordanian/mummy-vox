@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://drleohsit0yb0"
+path="res://.godot/imported/Giant Octopus.mp3-f76cc5da922da075e1ab0eff40357bd3.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Giant Octopus.mp3"
+dest_files=["res://.godot/imported/Giant Octopus.mp3-f76cc5da922da075e1ab0eff40357bd3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

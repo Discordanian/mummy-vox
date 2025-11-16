@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3qqmxvktsa22"
+path="res://.godot/imported/Thoughtlessly Drank.mp3-81c68a5f7a3efa7fb2e88f477a87e306.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Thoughtlessly Drank.mp3"
+dest_files=["res://.godot/imported/Thoughtlessly Drank.mp3-81c68a5f7a3efa7fb2e88f477a87e306.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

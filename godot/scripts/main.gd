@@ -14,8 +14,8 @@ extends Control
 @export var mummy: TextureRect
 @export var mummy_player: AnimationPlayer
 
-var sidea_tracks: Array[AudioStreamMP3]
-var sideb_tracks: Array[AudioStreamMP3]
+var sidea_tracks: Array[AudioStreamWAV]
+var sideb_tracks: Array[AudioStreamWAV]
 
 func config_selected() -> void:
     var selected: String = ConfigManager.get_selection("CHOICE_SELECT")
@@ -50,15 +50,15 @@ func _ready() -> void:
     config_selected()
     setup_audio_bus()
 
-func get_stream_array(directory: String) -> Array[AudioStreamMP3]:
-    var retval: Array[AudioStreamMP3] = []
+func get_stream_array(directory: String) -> Array[AudioStreamWAV]:
+    var retval: Array[AudioStreamWAV] = []
     var dir: DirAccess = DirAccess.open(directory)
     if dir:
         dir.list_dir_begin()
         var file_name: String = dir.get_next()
         while file_name != "":
             var full_path: String = directory + file_name
-            var audio_stream: AudioStreamMP3 = load(full_path)
+            var audio_stream: AudioStreamWAV = load(full_path)
             if audio_stream:
                 retval.append(audio_stream)
             file_name = dir.get_next()

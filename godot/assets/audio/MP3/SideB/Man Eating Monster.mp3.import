@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bblkhwon6i1ye"
+path="res://.godot/imported/Man Eating Monster.mp3-bbe3061f7bd55589987906ab6f9913c6.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Man Eating Monster.mp3"
+dest_files=["res://.godot/imported/Man Eating Monster.mp3-bbe3061f7bd55589987906ab6f9913c6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://nh1w2mf3crvb"
+path="res://.godot/imported/Hand of Destiny.mp3-41c0dfc280e3629b627beb3d1569ca8b.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Hand of Destiny.mp3"
+dest_files=["res://.godot/imported/Hand of Destiny.mp3-41c0dfc280e3629b627beb3d1569ca8b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

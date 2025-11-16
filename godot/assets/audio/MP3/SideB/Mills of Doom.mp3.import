@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnbjn8nrff4n5"
+path="res://.godot/imported/Mills of Doom.mp3-478bbecce46cf1ce69c90ec6e06fd34a.mp3str"
+
+[deps]
+
+source_file="res://assets/audio/MP3/SideB/Mills of Doom.mp3"
+dest_files=["res://.godot/imported/Mills of Doom.mp3-478bbecce46cf1ce69c90ec6e06fd34a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

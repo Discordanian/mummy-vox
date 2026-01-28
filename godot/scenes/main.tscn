@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://qqaopl4pymnk"]
+[gd_scene format=3 uid="uid://qqaopl4pymnk"]
 
 [ext_resource type="Theme" uid="uid://cwg84vu8hioik" path="res://assets/themes/vox-mummy.tres" id="1_jyhfs"]
 [ext_resource type="Texture2D" uid="uid://bp6lg8p5dgeci" path="res://assets/images/hieroglyphs.png" id="1_o5qli"]
@@ -60,7 +60,7 @@ _data = {
 &"RESET": SubResource("Animation_o6xl0")
 }
 
-[node name="Main" type="Control" node_paths=PackedStringArray("select_a", "select_b", "select_ab", "sfx_player", "vox_player", "mummy", "mummy_player")]
+[node name="Main" type="Control" unique_id=533570736 node_paths=PackedStringArray("select_a", "select_b", "select_ab", "sfx_player", "vox_player", "mummy", "mummy_player")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -77,7 +77,7 @@ vox_player = NodePath("VOXPlayer")
 mummy = NodePath("MarginContainer/VBoxContainer/Mummy")
 mummy_player = NodePath("MarginContainer/VBoxContainer/Mummy/AnimationPlayer")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=397993296]
 self_modulate = Color(0.31764707, 0.31764707, 0.31764707, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -87,7 +87,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_o5qli")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1774541004]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -99,69 +99,67 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=143992325]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=511048532]
 layout_mode = 2
 size_flags_vertical = 6
 text = "Mummy Vox"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=976985545]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="SideA" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="SideA" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1987793297]
 layout_mode = 2
 size_flags_horizontal = 3
 button_group = ExtResource("2_sugp2")
 text = "Side A"
 
-[node name="SideB" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="SideB" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=185373004]
 layout_mode = 2
 size_flags_horizontal = 3
 button_group = ExtResource("2_sugp2")
 text = "Side B"
 
-[node name="Both" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+[node name="Both" type="CheckBox" parent="MarginContainer/VBoxContainer/HBoxContainer" unique_id=1713779109]
 layout_mode = 2
 size_flags_horizontal = 3
 button_group = ExtResource("2_sugp2")
 text = "Side A + Side B"
 
-[node name="Buttons" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1140545991]
 layout_mode = 2
 
-[node name="SettingsButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons"]
+[node name="SettingsButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons" unique_id=1449146638]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Settings"
 alignment = 0
 
-[node name="SpeakButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons"]
+[node name="SpeakButton" type="Button" parent="MarginContainer/VBoxContainer/Buttons" unique_id=370057888]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "SPEAK"
 alignment = 2
 
-[node name="Mummy" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+[node name="Mummy" type="TextureRect" parent="MarginContainer/VBoxContainer" unique_id=115947378]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 2
 size_flags_vertical = 3
 texture = ExtResource("2_0wfyh")
 expand_mode = 4
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/VBoxContainer/Mummy"]
-libraries = {
-&"": SubResource("AnimationLibrary_tipki")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MarginContainer/VBoxContainer/Mummy" unique_id=280075850]
+libraries/ = SubResource("AnimationLibrary_tipki")
 
-[node name="SFXPlayer" type="AudioStreamPlayer" parent="."]
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="." unique_id=1459554235]
 stream = ExtResource("6_tefeu")
 bus = &"SFX"
 
-[node name="VOXPlayer" type="AudioStreamPlayer" parent="."]
+[node name="VOXPlayer" type="AudioStreamPlayer" parent="." unique_id=2009919778]
 bus = &"Voice"
 
 [connection signal="toggled" from="MarginContainer/VBoxContainer/HBoxContainer/SideA" to="." method="_on_side_toggled" binds= ["SIDEA"]]

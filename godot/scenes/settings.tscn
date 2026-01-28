@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dnlj7tva22a2j"]
+[gd_scene format=3 uid="uid://dnlj7tva22a2j"]
 
 [ext_resource type="Texture2D" uid="uid://bp6lg8p5dgeci" path="res://assets/images/hieroglyphs.png" id="1_5p8wc"]
 [ext_resource type="Theme" uid="uid://cwg84vu8hioik" path="res://assets/themes/vox-mummy.tres" id="1_r6d6q"]
 [ext_resource type="Script" uid="uid://hyqanqfqbtku" path="res://scripts/settings.gd" id="2_6wm04"]
 
-[node name="Settings" type="Control" node_paths=PackedStringArray("main_volume", "voice_volume", "sfx_volume")]
+[node name="Settings" type="Control" unique_id=312341727 node_paths=PackedStringArray("main_volume", "voice_volume", "sfx_volume")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,7 +19,7 @@ main_volume = NodePath("MarginContainer/VBoxContainer/GridContainer/MainVolume")
 voice_volume = NodePath("MarginContainer/VBoxContainer/GridContainer/VoiceVolume")
 sfx_volume = NodePath("MarginContainer/VBoxContainer/GridContainer/SFXVolume")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=828605691]
 self_modulate = Color(0.3180199, 0.31801975, 0.31801972, 1)
 layout_mode = 1
 anchors_preset = 15
@@ -32,7 +32,7 @@ size_flags_vertical = 3
 texture = ExtResource("1_5p8wc")
 expand_mode = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=308988312]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -44,31 +44,31 @@ theme_override_constants/margin_top = 40
 theme_override_constants/margin_right = 40
 theme_override_constants/margin_bottom = 40
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1317139014]
 layout_mode = 2
 theme_override_constants/separation = 40
 alignment = 1
 
-[node name="Title" type="Label" parent="MarginContainer/VBoxContainer"]
+[node name="Title" type="Label" parent="MarginContainer/VBoxContainer" unique_id=303182454]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
 text = "Settings"
 horizontal_alignment = 1
 
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer" unique_id=416313338]
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="Main" type="Label" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="Main" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=441494437]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Main"
 horizontal_alignment = 1
 
-[node name="MainVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="MainVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1680154817]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -78,13 +78,13 @@ tick_count = 20
 ticks_on_borders = true
 ticks_position = 2
 
-[node name="Voice" type="Label" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="Voice" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=584349951]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Voice"
 horizontal_alignment = 1
 
-[node name="VoiceVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="VoiceVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=432781227]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -94,13 +94,13 @@ tick_count = 20
 ticks_on_borders = true
 ticks_position = 2
 
-[node name="SFX" type="Label" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="SFX" type="Label" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=434303255]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "SFX"
 horizontal_alignment = 1
 
-[node name="SFXVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer"]
+[node name="SFXVolume" type="HSlider" parent="MarginContainer/VBoxContainer/GridContainer" unique_id=1240253863]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
@@ -110,7 +110,7 @@ tick_count = 20
 ticks_on_borders = true
 ticks_position = 2
 
-[node name="ReturnButton" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="ReturnButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1972535445]
 layout_mode = 2
 size_flags_horizontal = 4
 text = "Return"
